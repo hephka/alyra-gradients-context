@@ -1,7 +1,7 @@
 import React from "react"
 import GradientTagButton from "./GradientTagButton"
 
-const GradientTags = ({ tags, filter, setFilter }) => {
+const GradientTags = ({ tags }) => {
   return (
     <div className="mt-3">
       {tags.sort().map((tag) => {
@@ -9,8 +9,6 @@ const GradientTags = ({ tags, filter, setFilter }) => {
           <GradientTagButton
             key={tag}
             tag={tag}
-            filter={filter}
-            setFilter={setFilter}
           />
         )
       })}
